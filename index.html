@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Cookies Shop</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#fff8f0; }
+    header { background:#8b4513; color:white; padding:15px; text-align:center; }
+    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
+    .container { padding:20px; }
+    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+    .card { background:white; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); text-align:center; }
+    .card img { width:100%; border-radius:10px; }
+    button { background:#ff9800; border:none; padding:10px; color:white; border-radius:5px; cursor:pointer; }
+    footer { background:#333; color:white; text-align:center; padding:10px; margin-top:20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍪 Sweet Cookies Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Cookies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container" id="products">
+    <h2>Our Cookies</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Chocolate Cookie">
+        <h3>Chocolate Cookie</h3>
+        <p>Price: ₹50</p>
+        <button onclick="order('Chocolate Cookie')">Buy Now</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Butter Cookie">
+        <h3>Butter Cookie</h3>
+        <p>Price: ₹40</p>
+        <button onclick="order('Butter Cookie')">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>WhatsApp: 81xxxxxx63</p>
+    <p>Email: cookieshop@gmail.com</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Sweet Cookies Shop</p>
+  </footer>
+
+  <script>
+    function order(product){
+      alert('Aapne order kiya: ' + product + '\nWhatsApp par confirm karein');
+    }
+  </script>
+</body>
+</html>
